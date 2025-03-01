@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon - Home</title>
+    <link rel="stylesheet" href="Responsive_Gallery.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">Amazon</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">&#9776;</div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h1>Welcome to Amazon</h1>
+        <p>Your one-stop solution for everything online.</p>
+        
+        <!-- Shop Now Button (Redirects to Amazon) -->
+        <a href="https://www.amazon.com" target="_blank" class="animated-button">Shop Now</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Amazon</h2>
+        <p>Amazon is a multinational technology company focusing on e-commerce, cloud computing, digital streaming, and AI.</p>
+        <p>Founded by Jeff Bezos in 1994, Amazon has transformed online shopping and technology services.</p>
+        <img src="https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Amazon Office">
+
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <p>We provide e-commerce, AWS cloud computing, Prime Video, and much more.</p>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+        <h2>Our Products</h2>
+        <p>Explore millions of products across all categories.</p>
+    </section>
+
+    <section id="gallery">
+        <h2>Our Image Gallery</h2>
+        <div class="gallery">
+            <a href="https://unsplash.com/s/photos/nature" target="_blank">
+                <img src="https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg" alt="Nature 1">
+            </a>
+            <a href="https://www.pexels.com/search/nature/" target="_blank">
+                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg" alt="Nature 2">
+            </a>
+            <a href="https://www.pixabay.com/images/search/mountains/" target="_blank">
+                <img src="https://images.pexels.com/photos/34950/pexels-photo.jpg" alt="Nature 3">
+            </a>
+            <a href="https://unsplash.com/s/photos/river" target="_blank">
+                <img src="https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Nature 4 - River">
+
+
+
+            </a>
+            <a href="https://www.pexels.com/search/sunset/" target="_blank">
+                <img src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg" alt="Nature 5">
+            </a>
+            <a href="https://www.pixabay.com/images/search/beach/" target="_blank">
+                <img src="https://cdn.pixabay.com/photo/2015/06/19/21/24/avenue-815297_960_720.jpg" alt="Nature 6">
+            </a>
+        </div>
+    </section>
+    
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to us anytime.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Amazon. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+
+</body>
+</html>
